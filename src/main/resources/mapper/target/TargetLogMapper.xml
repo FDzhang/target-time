@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fd.targettime.target.mapper.TargetLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fd.targettime.target.entity.TargetLog">
+        <id column="id" property="id" />
+        <result column="finish_time" property="finishTime" />
+        <result column="target_list_id" property="targetListId" />
+        <result column="target_id" property="targetId" />
+        <result column="target_name" property="targetName" />
+        <result column="target_level" property="targetLevel" />
+        <result column="target_expect_time" property="targetExpectTime" />
+        <result column="target_actual_time" property="targetActualTime" />
+        <result column="target_finish_tag" property="targetFinishTag" />
+        <result column="remark" property="remark" />
+        <result column="feel" property="feel" />
+        <result column="create_by" property="createBy" />
+        <result column="create_time" property="createTime" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, finish_time, target_list_id, target_id, target_name, target_level, target_expect_time, target_actual_time, target_finish_tag, remark, feel, create_by, create_time, deleted
+    </sql>
+
+</mapper>
